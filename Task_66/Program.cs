@@ -9,15 +9,15 @@ int GetNumber (String msg)
     return number;
 }
 
-int SumOfNumbers (int m, int n)
+int SumOfElements (int m, int n)
 {
     if (m==n+1) return 0;
     else
     System.Console.WriteLine($"M -> {m}, N -> {n}");
-    return m+SumOfNumbers(m+1, n);
+    return m+SumOfElements(m+1, n);
 }
 
-System.Console.WriteLine(SumOfNumbers
-                        (GetNumber("Number M"),
+System.Console.WriteLine(SumOfElements
+                        (GetNumber("Number M:"),
                         (GetNumber("Number N:")
                         )));
